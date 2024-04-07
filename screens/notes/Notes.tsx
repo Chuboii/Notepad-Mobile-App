@@ -12,7 +12,7 @@ const Notes = () => {
           <Text style={styles.text}>Notes</Text>
           <SearchInput placeholder={'Search notes'}/>
           <NoteBoxes />
-          <AddNote/>
+          <AddNote enableTaskBoard={false} redirect={'posts'}/>
     </SafeAreaView>
   )
 }

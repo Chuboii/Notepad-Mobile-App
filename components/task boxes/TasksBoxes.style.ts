@@ -9,22 +9,18 @@ export const styles = StyleSheet.create({
         backgroundColor: 'black',
         borderRadius:20,
         marginVertical: 5,
-        padding:20
+        padding: 20,
+        paddingHorizontal:0,
+        flexDirection: 'row',
+        alignItems: 'center'
     },
     title: {
         fontWeight: 'bold',
         fontSize: 20,
-        color:"white"
-        
+        color:"white",
+        width:270
     },
-    subTitle: {
-        fontSize: 17,
-        marginTop: 7,
-        color:"white"
-    },
-    text: {
-        alignSelf: 'flex-end',
-        marginTop: 10,
-        color:"white"
+    checkbox: {
+        flex:1
     }
 })
