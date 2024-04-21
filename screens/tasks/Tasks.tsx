@@ -7,7 +7,7 @@ import { styles } from './Tasks.style'
 import AddNote from '../../components/add note/AddNote'
 import TasksBoxes from '../../components/task boxes/TasksBoxes'
 
-const Tasks = () => {
+const Tasks = ({navigation}) => {
   const [enableTaskBoard, setEnableTaskBoard] = useState(false)
 
   const taskBoardEnabler = () => setEnableTaskBoard(true)
@@ -17,7 +17,7 @@ const Tasks = () => {
           <Text style={styles.text}>Tasks</Text>
       <SearchInput placeholder='Search Tasks'/>
           <TasksBoxes />
-          <AddNote enableTaskBoard={enableTaskBoard} redirect={'tasks'}/>
+          <AddNote enableTaskBoard={true} navigation={navigation} redirect={'tasks'}/>
     </SafeAreaView>
   )
 }

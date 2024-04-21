@@ -1,15 +1,18 @@
 import { View, Text } from 'react-native'
-import React from 'react'
+import React, { useContext } from 'react'
 import { NavigationContainer } from '@react-navigation/native'
 import { createNativeStackNavigator } from '@react-navigation/native-stack'
 import Notes from '../../screens/notes/Notes'
 import Tasks from '../../screens/tasks/Tasks'
 import Tabs from '../tabs/Tabs'
 import Post from '../../screens/post/Post'
+import { DataContext } from '../../context/DataContext'
+
 
 const Stack = createNativeStackNavigator()
 
 const RenderScreens = () => {
+
   return (
     <NavigationContainer>
       <Stack.Navigator screenOptions={{
